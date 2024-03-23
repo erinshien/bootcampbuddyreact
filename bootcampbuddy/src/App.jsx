@@ -3,13 +3,13 @@ import './App.css'
 
 import Header from "./Header/Header.jsx"
 import Dropdown from "./Dropdown/Dropdown.jsx"
-import Instructions from "./Instructions/Instructions.jsx"
 import BuddyImage from "./BuddyImage/BuddyImage.jsx"
 import Message from "./Message/Message.jsx"
 import MoodButton from "./MoodButton/MoodButton.jsx"
 import Footer from "./Footer/Footer.jsx"
 
 const App = () => {
+
   const [selectedBuddy, setSelectedBuddy] = useState({
     name: '',
     image: 'selectbuddy.png',
@@ -20,13 +20,25 @@ const App = () => {
     setSelectedBuddy(buddy);
   };
 
+  const [ instructionsToggle , setInstructionsToggle ] = useState(false);
+
+  function handleInstructionsClick() {
+    setInstructionsToggle(!instructionsToggle);
+  }
+
   return (
     <body>
       <Header />
       <main>
         <section className="top">
           <Dropdown onSelectBuddy={handleSelectBuddy} />
-          <Instructions />
+          <button onClick={handleInstructionsClick} className={instructionsToggle ? "instructions-open" : "instructions-closed"}>Instructions</button>
+          { instructionsToggle && (
+          <div className="instructions-text">
+          <p>1. Select a buddy from the dropdown menu above</p>
+          <p>2. Tell them how you're feeling by clicking one of the faces below</p>
+          </div>
+          )}
         </section>
         <BuddyImage selectedBuddy={selectedBuddy} />
         <Message selectedBuddy={selectedBuddy} />

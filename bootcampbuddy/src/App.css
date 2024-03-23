@@ -1,5 +1,6 @@
 * {
   font-family: 'Ticketing';
+  color: #313638
 }
 
 body {
@@ -8,6 +9,32 @@ body {
 
 .top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  gap: 1rem;
+}
+
+.instructions-closed {
+  background: #fdfdfd;
+  color: #313638;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 2px;
+}
+
+.instructions-open {
+  background: grey;
+  color: #fdfdfd;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #313638;
+  border-radius: 2px;
+}
+
+.instructions-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.75rem;
 }
