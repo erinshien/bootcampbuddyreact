@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import 'react'
 import PropTypes from 'prop-types';
 import './Dropdown.css'
 
@@ -11,8 +11,16 @@ const Dropdown = ({ onSelectBuddy }) => {
   ];
 
   const handleSelectChange = (e) => {
-    const selectedBuddy = buddies.find((buddy) => buddy.name === e.target.value);
-    onSelectBuddy(selectedBuddy);
+    const selectedBuddyName = e.target.value;
+    if (selectedBuddyName) {
+      const selectedBuddy = buddies.find((buddy) => buddy.name === selectedBuddyName);
+      onSelectBuddy(selectedBuddy);
+    } else {
+      onSelectBuddy({
+        name: '',
+        image: 'selectbuddy.png'
+      });
+    }
   };
 
   return (
