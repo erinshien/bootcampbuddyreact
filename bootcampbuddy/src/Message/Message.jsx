@@ -2,12 +2,12 @@ import 'react'
 import PropTypes from 'prop-types';
 import './Message.css'
 
-const Message = ({ selectedMessage }) => {
-  return <p id="buddy-message">{selectedMessage}</p>;
+const Message = ({ selectedBuddy }) => {
+  return <p id="buddy-message">{selectedBuddy.message}</p>;
 }
 
 Message.propTypes = {
-  selectedMessage: PropTypes.string.isRequired,
+  selectedBuddy: PropTypes.object.isRequired,
 };
 
 export default Message;

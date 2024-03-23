@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="eqN0E7CpK8hGQlQd3jmF" name="Page-1">
+        <mxGraphModel dx="1324" dy="1287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Header" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="525" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Dropdown" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Instructions" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="BuddyImage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Message" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="MoodButton" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="900" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,3 +1,13 @@
 * {
   font-family: 'Ticketing';
 }
+
+body {
+  background-color: #fdfdfd;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
