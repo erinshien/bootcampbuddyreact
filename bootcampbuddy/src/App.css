@@ -38,3 +38,29 @@ body {
   padding-right: 10px;
   font-size: 0.75rem;
 }
+
+.mood-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.buttons {
+  grid-row-start: 1 span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mood-button-text {
+  grid-row-start: 2 span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 17px 0 10px;
+}
+
+.mood-button-text p {
+  font-size: 0.7rem;
+}

@@ -12,8 +12,7 @@ const App = () => {
 
   const [selectedBuddy, setSelectedBuddy] = useState({
     name: '',
-    image: 'selectbuddy.png',
-    message: 'Hello!'
+    image: 'selectbuddy.png'
   });
 
   const handleSelectBuddy = (buddy) => {
@@ -27,7 +26,7 @@ const App = () => {
   }
 
   return (
-    <body>
+    <>
       <Header />
       <main>
         <section className="top">
@@ -36,21 +35,29 @@ const App = () => {
           { instructionsToggle && (
           <div className="instructions-text">
           <p>1. Select a buddy from the dropdown menu above</p>
-          <p>2. Tell them how you're feeling by clicking one of the faces below</p>
+          <p>2. Tell them how you are feeling by clicking one of the faces below</p>
           </div>
           )}
         </section>
         <BuddyImage selectedBuddy={selectedBuddy} />
         <Message selectedBuddy={selectedBuddy} />
-        <section className="buttons">
-          <MoodButton color='#729ea1' image='moodbreakdown.png' text="I'm having a breakdown!" />
-          <MoodButton color='#b5bd89' image='moodsad.png' text="I'm not feeling so good..." />
-          <MoodButton color='#fbd87f' image='moodchill.png' text="I'm feeling pretty chill right now." />
-          <MoodButton color='#ec9192' image='moodhappy.png' text="I'm feeling great, thanks for asking!" />
+        <section className="mood-buttons">
+          <div className="buttons">
+            <MoodButton color='#729ea1' image='moodbreakdown.png' />
+            <MoodButton color='#b5bd89' image='moodsad.png' />
+            <MoodButton color='#fbd87f' image='moodchill.png' />
+            <MoodButton color='#ec9192' image='moodhappy.png' />
+          </div>
+          <div className="mood-button-text">
+            <p>I'm having a breakdown!</p>
+            <p>I'm not feeling so good...</p>
+            <p>I'm feeling pretty chill.</p>
+            <p>I'm feeling great!</p>
+          </div>
         </section>
       </main>
       <Footer />
-    </body>
+    </>
   )
 }
 

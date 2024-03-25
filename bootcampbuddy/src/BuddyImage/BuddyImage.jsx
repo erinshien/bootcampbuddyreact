@@ -5,7 +5,11 @@ import './BuddyImage.css'
 
 
 const BuddyImage = ({ selectedBuddy }) => {
-  return <img id="selected-buddy" src={selectedBuddy.image}></img>;
+  return (
+    <div className="image-container">
+      <img id="selected-buddy" src={selectedBuddy.image}></img>
+    </div>
+  );
 };
 
 // Prop type validation - specifies `imageSource` is required and should be a string

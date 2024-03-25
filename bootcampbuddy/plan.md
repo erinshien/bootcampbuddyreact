@@ -1,4 +1,4 @@
-1. Copy across HTML/CSS from original project and convert to React components
+1. Copy across HTML/CSS from original project and convert to React components ✅
 
 - Create new folder
 - Create JSX and CSS files
@@ -21,20 +21,25 @@
 
 - Instructions
 
-  - Instructions title should be a button
+  - Instructions title should be a button ✅
   - Color on hover
-  - When clicked, the instructions appear and instructions title changes to hover color
-  - When clicked again, the instructions close and title returns to original color
+  - When clicked, the instructions appear and instructions title changes to hover color ✅
+  - When clicked again, the instructions close and title returns to original color ✅
 
 - Dropdown Menu
 
-  - Should have "selected buddy" state
-  - When a buddy is selected, the image changes to the corresponding buddy image
+  - Should have "selected buddy" state ✅
+  - When a buddy is selected, the image changes to the corresponding buddy image ✅
   - The message element appears e.g. "${selectedBuddy} says: Hello!"
 
 - Mood Buttons
   - Before a button has been clicked, the message element shows the buddy's greeting
   - Each mood button generates a randomly selected message from the corresponsing mood-related phrases of the selected buddy
+  - Give the mood a corresponding number
+  - Message takes in selectedBuddyName and mood (number from 0-3)
+  - Finds object where name === selectedBuddyName
+  - Finds the array at the index of the mood number
+  - Generates a random number and returns the phrase at that index
 
 2. Design mobile site first
 
