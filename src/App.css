@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  height: 100vh;
+  /* background: #fdfdfd; */
+  background-image: linear-gradient(#fdfdfd, #ffeded);
 }
 
 .top {
@@ -13,30 +15,4 @@ body {
   justify-content: space-around;
   align-content: center;
   gap: 1rem;
-}
-
-.mood-buttons {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.buttons {
-  grid-row-start: 1 span 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.mood-button-text {
-  grid-row-start: 2 span 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 22px;
-  margin: 0 17px 0 17px;
-}
-
-.mood-button-text p {
-  font-size: 0.7rem;
 }

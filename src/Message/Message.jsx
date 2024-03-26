@@ -119,7 +119,11 @@ const Message = ({ selectedBuddy }) => {
   if (!selectedBuddyName) {
     return null;
   } else {
-    return <p id="buddy-message">{selectedBuddyMessages.greeting}</p>;
+    return (
+      <div className="displayed-message">
+        <p id="buddy-message">{selectedBuddyName} says: {selectedBuddyMessages.greeting}</p>
+      </div>
+    );
   }
 }
 

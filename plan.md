@@ -30,10 +30,10 @@
 
   - Should have "selected buddy" state ✅
   - When a buddy is selected, the image changes to the corresponding buddy image ✅
-  - The message element appears e.g. "${selectedBuddy} says: Hello!"
+  - The message element appears e.g. "${selectedBuddy} says: Hello!" ✅
 
 - Mood Buttons
-  - Before a button has been clicked, the message element shows the buddy's greeting
+  - Before a button has been clicked, the message element shows the buddy's greeting ✅
   - Each mood button generates a randomly selected message from the corresponsing mood-related phrases of the selected buddy
   - Give the mood a corresponding number
   - Message takes in selectedBuddyName and mood (number from 0-3)
@@ -43,7 +43,9 @@
 
 2. Design mobile site first
 
-- Figure out arrangement of components
-- Make instructions a toggle button so instructions appear and disappear
+- Figure out arrangement of components ✅
+- Make instructions a toggle button so instructions appear and disappear ✅
 
 3. Make site responsive for desktop
+
+- Add background image with body on white tile on top

@@ -41,15 +41,3 @@ Dropdown.propTypes = {
 
 export default Dropdown
 
-// export default function Dropdown() {
-//   return(
-//     <select id="buddy-selector">
-//       <option value="" selected disabled>Select your buddy</option>
-//       <option value="buddy-erin">Erin</option>
-//       <option value="buddy-holly">Holly</option>
-//       <option value="buddy-rachel">Rachel</option>
-//       <option value="buddy-stacie">Stacie</option>
-//     </select>
-//   )
-// }
-
