@@ -25,7 +25,7 @@ const Dropdown = ({ onSelectBuddy }) => {
 
   return (
     <select id="buddyDropdown" onChange={handleSelectChange}>
-      <option value="">Select your buddy</option>
+      <option value="">Select a buddy</option>
       {buddies.map((buddy) => (
         <option key={buddy.name} value={buddy.name}>
           {buddy.name}

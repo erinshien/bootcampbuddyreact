@@ -49,10 +49,10 @@ const App = () => {
             <MoodButton color='#ec9192' image='moodhappy.png' />
           </div>
           <div className="mood-button-text">
-            <p>I'm having a breakdown!</p>
-            <p>I'm not feeling so good...</p>
-            <p>I'm feeling pretty chill.</p>
-            <p>I'm feeling great!</p>
+            <p>I'm having a <br></br>breakdown!</p>
+            <p>I'm not feeling <br></br>so good...</p>
+            <p>I'm feeling <br></br>pretty chill.</p>
+            <p>I'm feeling <br></br>great!</p>
           </div>
         </section>
       </main>
