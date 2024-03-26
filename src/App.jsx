@@ -3,6 +3,7 @@ import './App.css'
 
 import Header from "./Header/Header.jsx"
 import Dropdown from "./Dropdown/Dropdown.jsx"
+import Instructions from "./Instructions/Instructions.jsx"
 import BuddyImage from "./BuddyImage/BuddyImage.jsx"
 import Message from "./Message/Message.jsx"
 import MoodButton from "./MoodButton/MoodButton.jsx"
@@ -19,25 +20,13 @@ const App = () => {
     setSelectedBuddy(buddy);
   };
 
-  const [ instructionsToggle , setInstructionsToggle ] = useState(false);
-
-  function handleInstructionsClick() {
-    setInstructionsToggle(!instructionsToggle);
-  }
-
   return (
     <>
       <Header />
       <main>
         <section className="top">
           <Dropdown onSelectBuddy={handleSelectBuddy} />
-          <button onClick={handleInstructionsClick} className={instructionsToggle ? "instructions-open" : "instructions-closed"}>Instructions</button>
-          { instructionsToggle && (
-          <div className="instructions-text">
-          <p>1. Select a buddy from the dropdown menu above</p>
-          <p>2. Tell them how you are feeling by clicking one of the faces below</p>
-          </div>
-          )}
+          <Instructions />
         </section>
         <BuddyImage selectedBuddy={selectedBuddy} />
         <Message selectedBuddy={selectedBuddy} />
